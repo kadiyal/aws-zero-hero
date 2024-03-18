@@ -18,7 +18,7 @@ phases:
       - echo "Running tests..."
       - cd day13
       - echo "Building Docker image..."
-       - echo "Kadiyala@1412" | docker login -u "sandeepkadiyala99973" --password-stdin "docker.io"
+       - echo "Iphone@1412" | docker login -u "sandeepkadiyala99973" --password-stdin "docker.io"
       - docker build -t "docker.io/sandeepkadiyala99973/simple-python-flask-app:latest" .
       - docker push "docker.io/sandeepkadiyala99973/simple-python-flask-app:latest"
   post_build:
