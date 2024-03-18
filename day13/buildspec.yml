@@ -12,11 +12,11 @@ phases:
   pre_build:
     commands:
       - echo "Installing dependencies..."
-      - pip install -r day-13/requirements.txt
+      - pip install -r day13/requirements.txt
   build:
     commands:
       - echo "Running tests..."
-      - cd day-13
+      - cd day13
       - echo "Building Docker image..."
        - echo "Kadiyala@1412" | docker login -u "sandeepkadiyala99973" --password-stdin "docker.io"
       - docker build -t "docker.io/sandeepkadiyala99973/simple-python-flask-app:latest" .
